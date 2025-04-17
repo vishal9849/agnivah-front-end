@@ -1,9 +1,7 @@
 <!-- Page.svelte -->
 <script>
-  import Header from '../components/Header.svelte';
   import Body from '../components/Body.svelte';
-  import Footer from '../components/Footer.svelte';
-  
+
   // Example data for body content
   const paragraphTitle = "Our Vision";
   const paragraphContent = "At our company, we're dedicated to creating innovative solutions that transform the way people interact with technology. Our approach combines cutting-edge development with thoughtful design to deliver experiences that are both powerful and intuitive. We believe that great technology should enhance human capabilities while remaining accessible to everyone.";
@@ -18,13 +16,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-  
   <main class="flex-grow">
-    <Body 
-      paragraphTitle={paragraphTitle}
-      paragraphContent={paragraphContent}
-      cards={featureCards}
-    />
+    <Body {paragraphTitle} {paragraphContent} cards={featureCards} />
   </main>
-  
 </div>

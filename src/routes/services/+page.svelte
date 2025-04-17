@@ -1,6 +1,5 @@
 <!-- Services.svelte -->
 <script lang="ts">
-
   // Services data
   const services = [
     {
@@ -140,10 +139,11 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-
   <main class="flex-grow">
     <!-- Hero Section -->
-    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <div
+      class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+    >
       <div class="container mx-auto px-4 py-20 text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
         <p class="text-xl max-w-3xl mx-auto">
@@ -322,5 +322,4 @@
       </div>
     </section>
   </main>
-
 </div>

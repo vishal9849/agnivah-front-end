@@ -1,11 +1,12 @@
 <!-- BodyContent.svelte -->
 <script lang="ts">
     import { onMount } from "svelte";
+    // import { authStore } from "../../stores/auth"; // Import your auth store
   
     // Props
     export let paragraphTitle = "About Us";
     export let paragraphContent =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget urna cursus fermentum. Sed auctor, magna in feugiat tincidunt, enim sapien aliquam nisi, nec tincidunt magna nunc vel risus. Vivamus at feugiat odio. Cras vitae lectus eget justo consequat vestibulum. Morbi sapien nulla, feugiat nec purus vel, vehicula tincidunt diam. Nulla facilisi. Proin at nunc at libero facilisis facilisis.";
+      "At our company, we're dedicated to creating innovative solutions that transform the way people interact with technology. Our approach combines cutting-edge development with thoughtful design to deliver experiences that are both powerful and intuitive. We believe that great technology should enhance human capabilities while remaining accessible to everyone.";
   
     export let cards = [
       {
@@ -64,9 +65,10 @@
     }
   
     // Initialize scroll position
-    onMount(() => {
-      scrollToCard(currentIndex);
-    });
+    // onMount(() => {
+    //   scrollToCard(currentIndex);
+    //   authStore.initialize();
+    // });
   </script>
   
   <div class="container mx-auto px-4 py-12">

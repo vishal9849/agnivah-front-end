@@ -3,3 +3,9 @@
 :global(html) {
   background-color: theme(--color-gray-100);
 }
+
+@layer components {
+  .card-hover {
+    @apply p-8 bg-gray-50 rounded-lg shadow-lg shadow-gray-400 transition-all duration-300 hover:bg-white hover:scale-95 hover:shadow-none;
+  }
+}

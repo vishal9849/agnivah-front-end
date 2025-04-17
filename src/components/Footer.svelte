@@ -2,6 +2,10 @@
 <script>
   // Props with defaults
   export let siteName = "My Website";
+  let siteDescription = `Embrace the power of Agniva 
+                        in streamlining your career goals, enhancing productivity.
+                        Imagine missing it.`;
+                        
   export let footerLinks = [
     {
       header: "Company",
@@ -43,8 +47,7 @@
       <div>
         <h3 class="text-lg font-semibold mb-4">{siteName}</h3>
         <p class="text-gray-300 mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          euismod bibendum laoreet.
+          {siteDescription}
         </p>
         <!-- Social links -->
         <div class="flex space-x-4">
