@@ -8,4 +8,8 @@
   .card-hover {
     @apply p-8 bg-gray-50 rounded-lg shadow-lg shadow-gray-400 transition-all duration-300 hover:bg-white hover:scale-95 hover:shadow-none;
   }
+
+  .header-menu{
+    @apply flex items-center text-gray-300 hover:scale-110 hover:text-gray-100 transition-all duration-200;
+  }
 }

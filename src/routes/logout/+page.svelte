@@ -17,14 +17,14 @@
 </script>
 
 <div
-  class="bg-white flex flex-col items-center justify-center px-6 py-12"
+  class="bg-gray-800 flex flex-col items-center min-h-screen justify-center px-6 py-12"
 >
   <div class="max-w-md text-center">
 
     <img src={logoSrc} alt="{message} logo"  />
 
     <!-- Heading -->
-    <p class="mt-4 text-lg text-gray-700">
+    <p class="mt-4 text-lg text-gray-100">
         {message}
     </p>
 

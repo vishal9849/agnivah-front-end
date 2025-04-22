@@ -22,9 +22,9 @@
   // Team members data
   const teamMembers = [
     {
-      name: "Alex Johnson",
+      name: "AK",
       role: "CEO & Founder",
-      image: "/apple.svg",
+      image: "/anil-img.jpeg",
       bio: "Alex has over 15 years of experience in the industry and founded the company in 2012.",
     },
     {
@@ -51,13 +51,15 @@
 </script>
 
 {#if $authStore.isAuthenticated}
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen bg-gray-800">
     <main class="flex-grow">
       <!-- Hero Section -->
-      <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+      <!-- <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white"> -->
+      <div class="bg-gray-800 border-none">
+
         <div class="container mx-auto px-4 py-20 text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">About Our Company</h1>
-          <p class="text-xl max-w-3xl mx-auto">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">About Our Company</h1>
+          <p class="text-xl max-w-3xl mx-auto text-gray-300">
             We're passionate about creating innovative solutions that transform
             ideas into reality.
           </p>
@@ -68,8 +70,8 @@
       <section class="container mx-auto px-4 py-16">
         <div class="flex flex-col md:flex-row gap-12 items-center">
           <div class="md:w-1/2">
-            <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Story</h2>
-            <div class="space-y-4 text-gray-600">
+            <h2 class="text-3xl font-bold mb-6 text-gray-100">Our Story</h2>
+            <div class="space-y-4 text-gray-300">
               <p>
                 Founded in 2012, our company began with a simple mission: to
                 build technology that makes a difference. What started as a
@@ -97,22 +99,24 @@
             <img
               src={about_us_svg}
               alt="Our company story"
-              class="rounded-lg shadow-xl w-full h-auto bg-gray-200 hover:scale-105 hover:bg-white transition-transform-color duration-400"
+              class="rounded-lg border-none
+               w-full h-auto bg-gradient-to-r from-gray-800 to-gray-900
+               hover:bg-gray-800 transition-transform-color duration-400"
             />
           </div>
         </div>
       </section>
 
       <!-- Company Metrics -->
-      <section class="bg-gray-50 py-16">
+      <section class="bg-gray-800 py-16">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             {#each companyStats as stat}
               <div class="text-center">
-                <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                <div class="text-4xl md:text-5xl font-bold text-gray-100 mb-2">
                   {stat.value}
                 </div>
-                <div class="text-gray-600">{stat.label}</div>
+                <div class="text-gray-400">{stat.label}</div>
               </div>
             {/each}
           </div>
@@ -121,16 +125,16 @@
 
       <!-- Our Values -->
       <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">
+        <h2 class="text-3xl font-bold mb-12 text-center text-gray-100">
           Our Values
         </h2>
 
         <div class="grid md:grid-cols-3 gap-8">
           <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-400"
+            class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg"
           >
             <div
-              class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+              class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -147,18 +151,18 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-3 text-gray-800">Innovation</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-semibold mb-3 text-gray-100">Innovation</h3>
+            <p class="text-gray-300">
               We continuously seek new and better ways to solve problems and
               create value for our clients.
             </p>
           </div>
 
           <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-400"
+          class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg"
           >
             <div
-              class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+            class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -175,18 +179,18 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-3 text-gray-800">Quality</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-semibold mb-3 text-gray-100">Quality</h3>
+            <p class="text-gray-300">
               We are committed to excellence in everything we do, from code
               quality to client relationships.
             </p>
           </div>
 
           <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-400"
+            class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg"
           >
             <div
-              class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+            class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -203,10 +207,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-3 text-gray-800">
+            <h3 class="text-xl font-semibold mb-3 text-gray-100">
               Collaboration
             </h3>
-            <p class="text-gray-600">
+            <p class="text-gray-300">
               We believe in the power of teamwork and partnership with our
               clients to achieve shared goals.
             </p>
@@ -215,28 +219,32 @@
       </section>
 
       <!-- Our Team -->
-      <section class="bg-gray-50 py-16">
+      <section class="bg-gray-800 py-16">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">
+          <h2 class="text-3xl font-bold mb-12 text-center text-gray-100">
             Meet Our Leadership Team
           </h2>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {#each teamMembers as member}
               <div
-                class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+                class="bg-gray-800 border border-gray-900 
+                hover:bg-gray-900 transition-all duration-600
+                rounded-lg overflow-hidden shadow-md hover:shadow-lg"
               >
+              <!-- class="w-full h-32 p-4 object-scale-none rounded-full bg-amber-50" -->
                 <img
                   src={member.image}
                   alt={member.name}
-                  class="w-full h-32 p-4 object-scale-none"
+                  class="w-16 h-16 border-2 border-blue-600 rounded-full bg-gray-800 text-gray-100 mt-5 ml-4"
+
                 />
-                <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-1 text-gray-800">
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold mb-1 text-gray-100">
                     {member.name}
                   </h3>
-                  <div class="text-blue-600 mb-4">{member.role}</div>
-                  <p class="text-gray-600">{member.bio}</p>
+                  <div class="text-blue-400 mb-4">{member.role}</div>
+                  <p class="text-gray-400">{member.bio}</p>
                 </div>
               </div>
             {/each}
@@ -246,16 +254,17 @@
 
       <!-- Call to Action -->
       <section
-        class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16"
+        class="bg-gray-800 py-16"
       >
         <div class="container mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold mb-6">Ready to Work With Us?</h2>
-          <p class="text-xl max-w-3xl mx-auto mb-8">
+          <h2 class="text-3xl text-gray-100 font-bold mb-6">Ready to Work With Us?</h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             We're always looking for new challenges and exciting projects.
           </p>
           <a
             href="/contact"
-            class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors"
+            class="inline-block bg-blue-600 text-gray-100
+             font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-500 transition-all duration-300"
           >
             Get in Touch
           </a>

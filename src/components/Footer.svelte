@@ -39,24 +39,24 @@
   export let year = new Date().getFullYear();
 </script>
 
-<footer class="bg-gray-800 text-white">
-  <div class="container mx-auto px-4 py-8">
+<footer class="bg-gradient-to-b from-gray-800 to-gray-900 text-gray-100">
+  <div class=" py-8">
     <!-- Footer top section with links -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
       <!-- Company/site info -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">{siteName}</h3>
-        <p class="text-gray-300 mb-4">
+        <h3 class="text-lg font-semibold mb-4 text-center">{siteName}</h3>
+        <p class="text-gray-300 mb-4 pl-8">
           {siteDescription}
         </p>
         <!-- Social links -->
-        <div class="flex space-x-4">
+        <div class="flex space-x-4 justify-center">
           {#each socialLinks as social}
             <a
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              class="text-gray-300 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-gray-100 hover:scale-125 transition-all duration-300 ease-in-out"
             >
               {#if social.icon === "github"}
                 <svg
