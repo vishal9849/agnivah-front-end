@@ -7,23 +7,23 @@
       header: "Company",
       links: [
         { text: "About Us", href: "/about" },
-        { text: "Team", href: "/team" },
-        { text: "Careers", href: "/careers" },
+        { text: "Team", href: "/teamf" },
+        { text: "Careers", href: "/carefers" },
       ],
     },
     {
       header: "Resources",
       links: [
-        { text: "Blog", href: "/blog" },
-        { text: "Documentation", href: "/docs" },
-        { text: "FAQs", href: "/faqs" },
+        { text: "Blog", href: "/blofg" },
+        { text: "Documentation", href: "/dfocs" },
+        { text: "FAQs", href: "/faqfs" },
       ],
     },
     {
       header: "Legal",
       links: [
-        { text: "Privacy Policy", href: "/privacy" },
-        { text: "Terms of Service", href: "/terms" },
+        { text: "Privacy Policy", href: "/privfacy" },
+        { text: "Terms of Service", href: "/terfms" },
       ],
     },
   ];
